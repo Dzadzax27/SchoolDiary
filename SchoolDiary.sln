@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolDiary", "SchoolDiary\SchoolDiary.csproj", "{6A25B676-5A9D-4FFA-B353-106ECD0B8E49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryData2", "DiaryData2\DiaryData2.csproj", "{DB29D556-71F6-4AF9-A5F6-A575BED13129}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A25B676-5A9D-4FFA-B353-106ECD0B8E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A25B676-5A9D-4FFA-B353-106ECD0B8E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A25B676-5A9D-4FFA-B353-106ECD0B8E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A25B676-5A9D-4FFA-B353-106ECD0B8E49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB29D556-71F6-4AF9-A5F6-A575BED13129}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB29D556-71F6-4AF9-A5F6-A575BED13129}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB29D556-71F6-4AF9-A5F6-A575BED13129}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB29D556-71F6-4AF9-A5F6-A575BED13129}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBBF0D07-64B0-47C8-AB2B-149D5229FCA5}
+	EndGlobalSection
+EndGlobal
