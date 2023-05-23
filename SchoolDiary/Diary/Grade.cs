@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Navigation;
 
 namespace SchoolDiary.Diary
 {
@@ -54,7 +55,7 @@ namespace SchoolDiary.Diary
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-            
+           
         }
 
         private void LoadCombo()
@@ -63,10 +64,6 @@ namespace SchoolDiary.Diary
             comboBox1.DataSource= list;
         }
 
-        private void Students_Load(object sender, EventArgs e)
-        {
-            LoadCombo();
-        }
         private void iconButton1_Click(object sender, EventArgs e)
         {
             Form frm = new Licni_podaci(nastavnik);
@@ -85,6 +82,25 @@ namespace SchoolDiary.Diary
             int num=int.Parse(comboBox1.SelectedItem.ToString());
             Form frm = new Students(num);
             frm.ShowDialog();
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+            Form frm = new Licni_podaci(nastavnik);
+            frm.Show();
+        }
+
+        private void btnSkola_Click(object sender, EventArgs e)
+        {
+            Form frm = new Pocetna(nastavnik);
+            Close();
+            frm.ShowDialog();
+            
+        }
+
+        private void Grade_Load(object sender, EventArgs e)
+        {
+            LoadCombo();
         }
     }
 }

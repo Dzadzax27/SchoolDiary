@@ -83,7 +83,7 @@ namespace SchoolDiary.Diary
 
         private void Licni_podaci_Load(object sender, EventArgs e)
         {
-
+            groupBox1.Location = new Point((this.ClientSize.Width - groupBox1.Width) / 2, groupBox1.Location.Y);
         }
         private void iconButton1_Click(object sender, EventArgs e)
         {
@@ -91,10 +91,19 @@ namespace SchoolDiary.Diary
             frm.Show();
         }
 
-        private void iconButton2_Click(object sender, EventArgs e)
+
+        private void btnSkola_Click(object sender, EventArgs e)
+        {
+            Form frm = new Pocetna(nastavnik);
+            frm.ShowDialog();
+            Close();
+        }
+
+        private void iconButton2_Click_1(object sender, EventArgs e)
         {
             Form frm = new Grade(nastavnik);
             frm.ShowDialog();
+            Close();
         }
     }
 }

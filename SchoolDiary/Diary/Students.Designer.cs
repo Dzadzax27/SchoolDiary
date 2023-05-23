@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Students));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -45,6 +45,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.iconButton3);
             this.panel1.Controls.Add(this.textBox1);
@@ -54,8 +55,15 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(787, 495);
+            this.panel1.Size = new System.Drawing.Size(977, 593);
             this.panel1.TabIndex = 1;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(98, 175);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(10, 22);
+            this.textBox2.TabIndex = 5;
             // 
             // iconButton3
             // 
@@ -63,7 +71,7 @@
             this.iconButton3.IconColor = System.Drawing.Color.RosyBrown;
             this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton3.IconSize = 30;
-            this.iconButton3.Location = new System.Drawing.Point(98, 132);
+            this.iconButton3.Location = new System.Drawing.Point(98, 167);
             this.iconButton3.Name = "iconButton3";
             this.iconButton3.Size = new System.Drawing.Size(51, 38);
             this.iconButton3.TabIndex = 4;
@@ -72,7 +80,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(98, 140);
+            this.textBox1.Location = new System.Drawing.Point(98, 175);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(10, 22);
             this.textBox1.TabIndex = 3;
@@ -85,7 +93,7 @@
             this.iconButton2.IconColor = System.Drawing.Color.RosyBrown;
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 30;
-            this.iconButton2.Location = new System.Drawing.Point(45, 132);
+            this.iconButton2.Location = new System.Drawing.Point(45, 167);
             this.iconButton2.Name = "iconButton2";
             this.iconButton2.Size = new System.Drawing.Size(47, 38);
             this.iconButton2.TabIndex = 2;
@@ -96,11 +104,11 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.RosyBrown;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(45, 176);
+            this.dataGridView1.Location = new System.Drawing.Point(45, 211);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(607, 241);
+            this.dataGridView1.Size = new System.Drawing.Size(759, 306);
             this.dataGridView1.TabIndex = 1;
             // 
             // iconButton1
@@ -114,20 +122,14 @@
             this.iconButton1.TabIndex = 0;
             this.iconButton1.UseVisualStyleBackColor = true;
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(98, 140);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(10, 22);
-            this.textBox2.TabIndex = 5;
-            // 
             // Students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(787, 495);
+            this.ClientSize = new System.Drawing.Size(977, 593);
             this.Controls.Add(this.panel1);
             this.Name = "Students";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Students";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

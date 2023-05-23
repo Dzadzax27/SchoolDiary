@@ -57,7 +57,7 @@
             this.panel1.ForeColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(701, 483);
+            this.panel1.Size = new System.Drawing.Size(979, 593);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -67,11 +67,10 @@
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
             this.iconButton4.IconColor = System.Drawing.Color.Black;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.IconSize = 35;
-            this.iconButton4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.iconButton4.Location = new System.Drawing.Point(373, 314);
+            this.iconButton4.IconSize = 55;
+            this.iconButton4.Location = new System.Drawing.Point(504, 358);
             this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(45, 40);
+            this.iconButton4.Size = new System.Drawing.Size(77, 58);
             this.iconButton4.TabIndex = 3;
             this.iconButton4.UseVisualStyleBackColor = false;
             this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
@@ -80,9 +79,9 @@
             // 
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(286, 250);
+            this.comboBox1.Location = new System.Drawing.Point(372, 293);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(234, 24);
+            this.comboBox1.Size = new System.Drawing.Size(314, 24);
             this.comboBox1.TabIndex = 2;
             // 
             // label1
@@ -90,7 +89,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(307, 210);
+            this.label1.Location = new System.Drawing.Point(457, 244);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 29);
             this.label1.TabIndex = 1;
@@ -107,7 +106,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 479);
+            this.panelMenu.Size = new System.Drawing.Size(200, 589);
             this.panelMenu.TabIndex = 0;
             // 
             // btnMenu
@@ -134,6 +133,7 @@
             this.btnSkola.Size = new System.Drawing.Size(197, 72);
             this.btnSkola.TabIndex = 4;
             this.btnSkola.UseVisualStyleBackColor = true;
+            this.btnSkola.Click += new System.EventHandler(this.btnSkola_Click);
             // 
             // iconButton3
             // 
@@ -182,16 +182,19 @@
             this.iconButton1.Tag = "About me";
             this.iconButton1.Text = "About me";
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
             // Grade
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(701, 483);
+            this.ClientSize = new System.Drawing.Size(979, 593);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Grade";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Students";
-            this.Load += new System.EventHandler(this.Students_Load);
+            this.Load += new System.EventHandler(this.Grade_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panelMenu.ResumeLayout(false);

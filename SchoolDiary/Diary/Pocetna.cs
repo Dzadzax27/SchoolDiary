@@ -27,7 +27,7 @@ namespace SchoolDiary.Diary
 
         private void Pocetna_Load(object sender, EventArgs e)
         {
-           
+            
         }
 
         private void iconButton5_Click(object sender, EventArgs e)
@@ -73,6 +73,11 @@ namespace SchoolDiary.Diary
         {
             Form frm = new Grade(nastavnik);
             frm.ShowDialog();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

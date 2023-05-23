@@ -51,8 +51,9 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(719, 530);
+            this.panel1.Size = new System.Drawing.Size(977, 595);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -60,7 +61,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 20F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label1.Location = new System.Drawing.Point(232, 241);
+            this.label1.Location = new System.Drawing.Point(338, 278);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(412, 39);
             this.label1.TabIndex = 1;
@@ -77,7 +78,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 530);
+            this.panelMenu.Size = new System.Drawing.Size(233, 595);
             this.panelMenu.TabIndex = 0;
             // 
             // btnMenu
@@ -85,9 +86,9 @@
             this.btnMenu.IconChar = FontAwesome.Sharp.IconChar.BarChart;
             this.btnMenu.IconColor = System.Drawing.Color.RosyBrown;
             this.btnMenu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnMenu.Location = new System.Drawing.Point(141, 0);
+            this.btnMenu.Location = new System.Drawing.Point(0, 0);
             this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(59, 72);
+            this.btnMenu.Size = new System.Drawing.Size(230, 72);
             this.btnMenu.TabIndex = 5;
             this.btnMenu.UseVisualStyleBackColor = true;
             this.btnMenu.Click += new System.EventHandler(this.iconButton5_Click);
@@ -115,7 +116,7 @@
             this.iconButton3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton3.Location = new System.Drawing.Point(0, 269);
             this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(200, 48);
+            this.iconButton3.Size = new System.Drawing.Size(233, 48);
             this.iconButton3.TabIndex = 3;
             this.iconButton3.Tag = "Calendar";
             this.iconButton3.Text = "Calendar";
@@ -131,7 +132,7 @@
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton2.Location = new System.Drawing.Point(0, 192);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(200, 47);
+            this.iconButton2.Size = new System.Drawing.Size(233, 47);
             this.iconButton2.TabIndex = 2;
             this.iconButton2.Tag = "Students";
             this.iconButton2.Text = "Students";
@@ -148,7 +149,7 @@
             this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.iconButton1.Location = new System.Drawing.Point(0, 110);
             this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(197, 50);
+            this.iconButton1.Size = new System.Drawing.Size(233, 50);
             this.iconButton1.TabIndex = 1;
             this.iconButton1.Tag = "About me";
             this.iconButton1.Text = "About me";
@@ -159,9 +160,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(719, 530);
+            this.ClientSize = new System.Drawing.Size(977, 595);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Pocetna";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pocetna";
             this.Load += new System.EventHandler(this.Pocetna_Load);
             this.panel1.ResumeLayout(false);

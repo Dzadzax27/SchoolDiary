@@ -65,7 +65,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(797, 518);
+            this.panel1.Size = new System.Drawing.Size(978, 640);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -85,17 +85,17 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(260, 134);
+            this.groupBox1.Location = new System.Drawing.Point(325, 110);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(392, 316);
+            this.groupBox1.Size = new System.Drawing.Size(500, 500);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(293, 276);
+            this.button1.Location = new System.Drawing.Point(379, 429);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 24);
+            this.button1.Size = new System.Drawing.Size(90, 30);
             this.button1.TabIndex = 12;
             this.button1.Text = "Change";
             this.button1.UseVisualStyleBackColor = true;
@@ -104,55 +104,60 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dateTimePicker1.Location = new System.Drawing.Point(107, 151);
+            this.dateTimePicker1.Location = new System.Drawing.Point(109, 229);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(261, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(300, 22);
             this.dateTimePicker1.TabIndex = 11;
             // 
             // txtSurname
             // 
             this.txtSurname.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtSurname.Location = new System.Drawing.Point(107, 89);
+            this.txtSurname.Location = new System.Drawing.Point(109, 121);
+            this.txtSurname.Multiline = true;
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(261, 22);
+            this.txtSurname.Size = new System.Drawing.Size(300, 40);
             this.txtSurname.TabIndex = 10;
             // 
             // txtPasword
             // 
             this.txtPasword.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtPasword.Location = new System.Drawing.Point(107, 229);
+            this.txtPasword.Location = new System.Drawing.Point(109, 342);
+            this.txtPasword.Multiline = true;
             this.txtPasword.Name = "txtPasword";
-            this.txtPasword.Size = new System.Drawing.Size(261, 22);
+            this.txtPasword.Size = new System.Drawing.Size(300, 40);
             this.txtPasword.TabIndex = 9;
             // 
             // txtUsername
             // 
             this.txtUsername.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtUsername.Location = new System.Drawing.Point(108, 196);
+            this.txtUsername.Location = new System.Drawing.Point(109, 277);
+            this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(261, 22);
+            this.txtUsername.Size = new System.Drawing.Size(300, 40);
             this.txtUsername.TabIndex = 8;
             // 
             // txtEducation
             // 
             this.txtEducation.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.txtEducation.Location = new System.Drawing.Point(107, 121);
+            this.txtEducation.Location = new System.Drawing.Point(109, 177);
+            this.txtEducation.Multiline = true;
             this.txtEducation.Name = "txtEducation";
-            this.txtEducation.Size = new System.Drawing.Size(261, 22);
+            this.txtEducation.Size = new System.Drawing.Size(300, 40);
             this.txtEducation.TabIndex = 7;
             // 
             // txtName
             // 
             this.txtName.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txtName.Location = new System.Drawing.Point(107, 58);
+            this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(261, 22);
+            this.txtName.Size = new System.Drawing.Size(300, 40);
             this.txtName.TabIndex = 6;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(32, 229);
+            this.label6.Location = new System.Drawing.Point(33, 354);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 16);
             this.label6.TabIndex = 5;
@@ -161,7 +166,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(32, 202);
+            this.label5.Location = new System.Drawing.Point(33, 290);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 16);
             this.label5.TabIndex = 4;
@@ -170,7 +175,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 151);
+            this.label4.Location = new System.Drawing.Point(25, 229);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(78, 16);
             this.label4.TabIndex = 3;
@@ -179,7 +184,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 124);
+            this.label3.Location = new System.Drawing.Point(33, 180);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 16);
             this.label3.TabIndex = 2;
@@ -188,7 +193,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(26, 89);
+            this.label2.Location = new System.Drawing.Point(29, 135);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 16);
             this.label2.TabIndex = 1;
@@ -197,7 +202,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 58);
+            this.label1.Location = new System.Drawing.Point(33, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 16);
             this.label1.TabIndex = 0;
@@ -214,7 +219,7 @@
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(200, 518);
+            this.panelMenu.Size = new System.Drawing.Size(200, 640);
             this.panelMenu.TabIndex = 0;
             // 
             // btnMenu
@@ -241,6 +246,7 @@
             this.btnSkola.Size = new System.Drawing.Size(197, 72);
             this.btnSkola.TabIndex = 4;
             this.btnSkola.UseVisualStyleBackColor = true;
+            this.btnSkola.Click += new System.EventHandler(this.btnSkola_Click);
             // 
             // iconButton3
             // 
@@ -273,6 +279,7 @@
             this.iconButton2.Tag = "Students";
             this.iconButton2.Text = "Students";
             this.iconButton2.UseVisualStyleBackColor = false;
+            this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click_1);
             // 
             // iconButton1
             // 
@@ -294,9 +301,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(797, 518);
+            this.ClientSize = new System.Drawing.Size(978, 640);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Location = new System.Drawing.Point(338, 278);
             this.Name = "Licni_podaci";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Licni_podaci";
             this.Load += new System.EventHandler(this.Licni_podaci_Load);
             this.panel1.ResumeLayout(false);
