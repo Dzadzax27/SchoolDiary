@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DiaryData2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,14 +8,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Xunit;
 
 namespace SchoolDiary.Diary
 {
     public partial class Students : Form
     {
+        int n;
+        DiaryDBContext baza = ConnectionToBase._base;
         public Students(int num)
         {
             InitializeComponent();
+            n = num;
+            dataGridView1.AutoGenerateColumns = false;
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
@@ -33,18 +39,50 @@ namespace SchoolDiary.Diary
 
         private void iconButton3_Click(object sender, EventArgs e)
         {
-            if (textBox2.Width > 300)
-            {
-                textBox2.Width = 0;
-                iconButton2.Show();
-                iconButton3.Location = new Point(98, 132);
-            }
-            else
-            {
-                textBox2.Width = 400;
-                iconButton2.Hide();
-                iconButton3.Location = new Point(45,132);
-            }
+            //if (textBox2.Width > 300)
+            //{
+            //    textBox2.Width = 0;
+            //    iconButton2.Show();
+            //    iconButton3.Location = new Point(75, 135);
+            //}
+            //else
+            //{
+            //    textBox2.Width = 400;
+            //    iconButton2.Hide();
+            //    iconButton3.Location = new Point(43,135);
+            //}
+            Form frm = new AddStudent(n);
+            frm.ShowDialog();
+            LoadDGV();
+        }
+
+        private void iconButton3_MouseHover(object sender, EventArgs e)
+        {
+            // Primer provere teksta na dugmetu
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.iconButton3, "Add student");
+
+        }
+
+        private void iconButton2_MouseHover(object sender, EventArgs e)
+        {
+            System.Windows.Forms.ToolTip ToolTip1 = new System.Windows.Forms.ToolTip();
+            ToolTip1.SetToolTip(this.iconButton3, "Search for a student");
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Students_Load(object sender, EventArgs e)
+        {
+            LoadDGV();
+        }
+
+        private void LoadDGV()
+        {
+            dataGridView1.DataSource = baza.Studenti.ToList();
         }
     }
 }

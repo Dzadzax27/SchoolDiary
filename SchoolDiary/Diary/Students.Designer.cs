@@ -36,6 +36,10 @@
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.Ime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Razred = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Subjects = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -77,6 +81,7 @@
             this.iconButton3.TabIndex = 4;
             this.iconButton3.UseVisualStyleBackColor = true;
             this.iconButton3.Click += new System.EventHandler(this.iconButton3_Click);
+            this.iconButton3.MouseHover += new System.EventHandler(this.iconButton3_MouseHover);
             // 
             // textBox1
             // 
@@ -99,11 +104,17 @@
             this.iconButton2.TabIndex = 2;
             this.iconButton2.UseVisualStyleBackColor = false;
             this.iconButton2.Click += new System.EventHandler(this.iconButton2_Click);
+            this.iconButton2.MouseHover += new System.EventHandler(this.iconButton2_MouseHover);
             // 
             // dataGridView1
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.RosyBrown;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ime,
+            this.Prezime,
+            this.Razred,
+            this.Subjects});
             this.dataGridView1.Location = new System.Drawing.Point(45, 211);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
@@ -121,6 +132,42 @@
             this.iconButton1.Size = new System.Drawing.Size(80, 54);
             this.iconButton1.TabIndex = 0;
             this.iconButton1.UseVisualStyleBackColor = true;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
+            // Ime
+            // 
+            this.Ime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Ime.DataPropertyName = "Ime";
+            this.Ime.HeaderText = "Name";
+            this.Ime.MinimumWidth = 6;
+            this.Ime.Name = "Ime";
+            // 
+            // Prezime
+            // 
+            this.Prezime.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Prezime.DataPropertyName = "Prezime";
+            this.Prezime.HeaderText = "Surname";
+            this.Prezime.MinimumWidth = 6;
+            this.Prezime.Name = "Prezime";
+            // 
+            // Razred
+            // 
+            this.Razred.DataPropertyName = "Razred";
+            this.Razred.HeaderText = "Grade";
+            this.Razred.MinimumWidth = 6;
+            this.Razred.Name = "Razred";
+            this.Razred.ReadOnly = true;
+            this.Razred.Width = 125;
+            // 
+            // Subjects
+            // 
+            this.Subjects.HeaderText = "Subjects";
+            this.Subjects.MinimumWidth = 6;
+            this.Subjects.Name = "Subjects";
+            this.Subjects.ReadOnly = true;
+            this.Subjects.Text = "Subjects";
+            this.Subjects.UseColumnTextForButtonValue = true;
+            this.Subjects.Width = 125;
             // 
             // Students
             // 
@@ -131,6 +178,7 @@
             this.Name = "Students";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Students";
+            this.Load += new System.EventHandler(this.Students_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -147,5 +195,9 @@
         private System.Windows.Forms.TextBox textBox1;
         private FontAwesome.Sharp.IconButton iconButton3;
         private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Ime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Prezime;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Razred;
+        private System.Windows.Forms.DataGridViewButtonColumn Subjects;
     }
 }

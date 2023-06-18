@@ -15,6 +15,8 @@
                         Ime = c.String(),
                         Prezime = c.String(),
                         Razred = c.Int(nullable: false),
+                        DatumRodjenja= c.DateTime(nullable: false),
+                        DatumPocetka= c.DateTime()
                     })
                 .PrimaryKey(t => t.Id);
             

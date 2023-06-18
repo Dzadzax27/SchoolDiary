@@ -64,6 +64,9 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WindowsBase" />
+    <Reference Include="xunit.assert, Version=2.4.2.0, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.assert.2.4.2\lib\netstandard1.1\xunit.assert.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConnectiontoBase\ConnectionToBase.cs">
@@ -74,6 +77,12 @@
     </Compile>
     <Compile Include="ConnectiontoBase\Nastavnici.cs" />
     <Compile Include="ConnectiontoBase\Studenti.cs" />
+    <Compile Include="Diary\AddStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diary\AddStudent.Designer.cs">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Diary\Licni podaci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +131,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validacija\Validacija.cs" />
+    <EmbeddedResource Include="Diary\AddStudent.resx">
+      <DependentUpon>AddStudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Diary\Licni podaci.resx">
       <DependentUpon>Licni podaci.cs</DependentUpon>
     </EmbeddedResource>
