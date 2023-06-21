@@ -40,6 +40,7 @@
             this.Prezime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Razred = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Subjects = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.Remove = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -114,13 +115,16 @@
             this.Ime,
             this.Prezime,
             this.Razred,
-            this.Subjects});
+            this.Subjects,
+            this.Remove});
             this.dataGridView1.Location = new System.Drawing.Point(45, 211);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(759, 306);
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataGridView1.Size = new System.Drawing.Size(784, 306);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // iconButton1
             // 
@@ -169,6 +173,15 @@
             this.Subjects.UseColumnTextForButtonValue = true;
             this.Subjects.Width = 125;
             // 
+            // Remove
+            // 
+            this.Remove.HeaderText = "Remove";
+            this.Remove.MinimumWidth = 6;
+            this.Remove.Name = "Remove";
+            this.Remove.Text = "Remove";
+            this.Remove.UseColumnTextForButtonValue = true;
+            this.Remove.Width = 125;
+            // 
             // Students
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -199,5 +212,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Prezime;
         private System.Windows.Forms.DataGridViewTextBoxColumn Razred;
         private System.Windows.Forms.DataGridViewButtonColumn Subjects;
+        private System.Windows.Forms.DataGridViewButtonColumn Remove;
     }
 }

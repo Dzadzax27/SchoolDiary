@@ -82,7 +82,20 @@ namespace SchoolDiary.Diary
 
         private void LoadDGV()
         {
-            dataGridView1.DataSource = baza.Studenti.ToList();
+            List<Studenti> students = baza.Studenti.ToList();
+            dataGridView1.DataSource = students.Where(x => x.Razred == n).ToList();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var st = dataGridView1.SelectedRows[0].DataBoundItem as Studenti;
+            if(e.ColumnIndex==4)
+            {
+                baza.Studenti.Remove(st);
+                baza.SaveChanges();
+                LoadDGV();
+            }
+
         }
     }
 }
