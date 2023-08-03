@@ -7,6 +7,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 using Xunit;
 
@@ -80,10 +81,18 @@ namespace SchoolDiary.Diary
             LoadDGV();
         }
 
-        private void LoadDGV()
+        private void LoadDGV(List<Studenti> stud=null)
         {
-            List<Studenti> students = baza.Studenti.ToList();
-            dataGridView1.DataSource = students.Where(x => x.Razred == n).ToList();
+            if (stud == null)
+            {
+                List<Studenti> students = baza.Studenti.ToList();
+                dataGridView1.DataSource = students.Where(x => x.Razred == n).ToList();
+            }
+            else
+            {
+                dataGridView1.DataSource=stud.Where(x => x.Razred == n).ToList();
+            }
+
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -95,6 +104,25 @@ namespace SchoolDiary.Diary
                 baza.SaveChanges();
                 LoadDGV();
             }
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+            var text = textBox1.Text;
+            if (text != "")
+            {
+                var list = baza.Studenti.Where(x => x.Ime.ToLower().Contains(text.ToLower())).ToList();
+                LoadDGV(list);
+            }
+            else
+                LoadDGV();
 
         }
     }
