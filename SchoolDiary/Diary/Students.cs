@@ -118,7 +118,8 @@ namespace SchoolDiary.Diary
             var text = textBox1.Text;
             if (text != "")
             {
-                var list = baza.Studenti.Where(x => x.Ime.ToLower().Contains(text.ToLower())).ToList();
+                var list = baza.Studenti.Where(x => x.Ime.ToLower().Contains(text.ToLower())
+                || x.Prezime.ToLower().Contains(text.ToLower())).ToList();
                 LoadDGV(list);
             }
             else

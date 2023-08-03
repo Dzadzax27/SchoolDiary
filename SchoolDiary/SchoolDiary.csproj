@@ -77,6 +77,8 @@
     </Compile>
     <Compile Include="ConnectiontoBase\Nastavnici.cs" />
     <Compile Include="ConnectiontoBase\Studenti.cs" />
+    <Compile Include="ConnectiontoBase\Subjects.cs" />
+    <Compile Include="ConnectiontoBase\SubjectsStudent.cs" />
     <Compile Include="Diary\AddStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +117,10 @@
     <Compile Include="Migrations\202304101305420_naziv_migracije.designer.cs">
       <DependentUpon>202304101305420_naziv_migracije.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202308031501485_YourMigrationName.cs" />
+    <Compile Include="Migrations\202308031501485_YourMigrationName.designer.cs">
+      <DependentUpon>202308031501485_YourMigrationName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Prijava\LogIn.cs">
       <SubType>Form</SubType>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304101305420_naziv_migracije.resx">
       <DependentUpon>202304101305420_naziv_migracije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308031501485_YourMigrationName.resx">
+      <DependentUpon>202308031501485_YourMigrationName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prijava\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
