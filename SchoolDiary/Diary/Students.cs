@@ -104,6 +104,11 @@ namespace SchoolDiary.Diary
                 baza.SaveChanges();
                 LoadDGV();
             }
+            if(e.ColumnIndex==3)
+            {
+                Form frm = new AddSubjects(st);
+                frm.ShowDialog();
+            }
 
         }
 

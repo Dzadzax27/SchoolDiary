@@ -85,6 +85,12 @@
     <Compile Include="Diary\AddStudent.Designer.cs">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Diary\AddSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diary\AddSubjects.Designer.cs">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
+    </Compile>
     <Compile Include="Diary\Licni podaci.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,12 @@
     </Compile>
     <Compile Include="Diary\Students.Designer.cs">
       <DependentUpon>Students.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Diary\NewSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Diary\NewSubject.Designer.cs">
+      <DependentUpon>NewSubject.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\202303171801461_InitialCreate.cs" />
     <Compile Include="Migrations\202303171801461_InitialCreate.designer.cs">
@@ -144,6 +156,9 @@
     <EmbeddedResource Include="Diary\AddStudent.resx">
       <DependentUpon>AddStudent.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Diary\AddSubjects.resx">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Diary\Licni podaci.resx">
       <DependentUpon>Licni podaci.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Diary\Students.resx">
       <DependentUpon>Students.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Diary\NewSubject.resx">
+      <DependentUpon>NewSubject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303171801461_InitialCreate.resx">
       <DependentUpon>202303171801461_InitialCreate.cs</DependentUpon>
