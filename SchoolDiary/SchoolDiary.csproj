@@ -121,6 +121,10 @@
     <Compile Include="Migrations\202308031501485_YourMigrationName.designer.cs">
       <DependentUpon>202308031501485_YourMigrationName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202308031509342_SubjectsStudents.cs" />
+    <Compile Include="Migrations\202308031509342_SubjectsStudents.designer.cs">
+      <DependentUpon>202308031509342_SubjectsStudents.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Prijava\LogIn.cs">
       <SubType>Form</SubType>
@@ -160,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202308031501485_YourMigrationName.resx">
       <DependentUpon>202308031501485_YourMigrationName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202308031509342_SubjectsStudents.resx">
+      <DependentUpon>202308031509342_SubjectsStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prijava\LogIn.resx">
       <DependentUpon>LogIn.cs</DependentUpon>
