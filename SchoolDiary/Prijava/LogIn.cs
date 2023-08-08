@@ -25,7 +25,10 @@ namespace SchoolDiary
             {
                 Nastavnici nastavnik = ctb.Nastavnici.Where(x => x.KorisnickoIme == textBox1.Text).First();
                 Form frm = new Diary.Pocetna(nastavnik);
-                frm.ShowDialog();
+                
+                frm.Show();
+                this.Hide();
+                
             }
             else
             {

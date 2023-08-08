@@ -1023,4 +1023,13 @@
         oEE8bfvBtCRQGMpIcKubqCYoBN52tXCVDAAy4VM0wI/l/e4Dc37oLHmN9Pr/ADoAM9sKAWU6VSH/2Q==
 </value>
   </data>
+  <metadata name="Student.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Subject.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="Grade.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
 </root>

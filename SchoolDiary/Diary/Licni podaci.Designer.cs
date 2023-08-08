@@ -296,6 +296,7 @@
             this.iconButton1.Tag = "About me";
             this.iconButton1.Text = "About me";
             this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click_1);
             // 
             // Licni_podaci
             // 

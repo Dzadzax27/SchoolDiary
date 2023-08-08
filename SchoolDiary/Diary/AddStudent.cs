@@ -23,7 +23,7 @@ namespace SchoolDiary.Diary
 
         private void iconButton1_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void AddStudent_Load(object sender, EventArgs e)

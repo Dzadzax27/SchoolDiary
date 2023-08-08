@@ -81,21 +81,23 @@ namespace SchoolDiary.Diary
             this.Close();
             int num=int.Parse(comboBox1.SelectedItem.ToString());
             Form frm = new Students(num);
-            frm.ShowDialog();
+            frm.Show();
+            this.Hide();
         }
 
         private void iconButton1_Click_1(object sender, EventArgs e)
         {
             Form frm = new Licni_podaci(nastavnik);
             frm.Show();
+            this.Hide();
         }
 
         private void btnSkola_Click(object sender, EventArgs e)
         {
             Form frm = new Pocetna(nastavnik);
-            Close();
-            frm.ShowDialog();
-            
+            frm.Show();
+            this.Hide();
+
         }
 
         private void Grade_Load(object sender, EventArgs e)

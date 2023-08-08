@@ -67,12 +67,14 @@ namespace SchoolDiary.Diary
         {
             Form frm= new Licni_podaci(nastavnik);
             frm.Show();
+            this.Hide();
         }
 
         private void iconButton2_Click(object sender, EventArgs e)
         {
             Form frm = new Grade(nastavnik);
-            frm.ShowDialog();
+            frm.Show();
+            this.Hide();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

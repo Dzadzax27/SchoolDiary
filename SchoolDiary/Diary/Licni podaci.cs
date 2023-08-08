@@ -89,21 +89,27 @@ namespace SchoolDiary.Diary
         {
             Form frm = new Licni_podaci(nastavnik);
             frm.Show();
+            this.Hide();
         }
 
 
         private void btnSkola_Click(object sender, EventArgs e)
         {
             Form frm = new Pocetna(nastavnik);
-            frm.ShowDialog();
-            Close();
+            frm.Show();
+            this.Hide();
         }
 
         private void iconButton2_Click_1(object sender, EventArgs e)
         {
             Form frm = new Grade(nastavnik);
-            frm.ShowDialog();
-            Close();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void iconButton1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

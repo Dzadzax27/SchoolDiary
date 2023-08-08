@@ -91,9 +91,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(457, 244);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(171, 29);
+            this.label1.Size = new System.Drawing.Size(166, 29);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Choose grade";
+            this.label1.Text = "Choose class";
             // 
             // panelMenu
             // 
