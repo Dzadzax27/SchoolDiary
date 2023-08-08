@@ -20,6 +20,7 @@ namespace SchoolDiary.Diary
         {
             InitializeComponent();
              stud= st;
+            dataGridView1.AutoGenerateColumns= false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -66,6 +67,7 @@ namespace SchoolDiary.Diary
             subStud.Grade = int.Parse(cmbGrade.SelectedItem.ToString());
             baza.SubjectsStudents.Add(subStud);
             baza.SaveChanges();
+            LoadDGV();
         }
     }
 }

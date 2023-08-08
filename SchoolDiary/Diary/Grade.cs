@@ -81,8 +81,7 @@ namespace SchoolDiary.Diary
             this.Close();
             int num=int.Parse(comboBox1.SelectedItem.ToString());
             Form frm = new Students(num);
-            frm.Show();
-            this.Hide();
+            frm.ShowDialog();
         }
 
         private void iconButton1_Click_1(object sender, EventArgs e)

@@ -37,6 +37,9 @@
             this.cmbGrade = new System.Windows.Forms.ComboBox();
             this.cmbSubjects = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Student = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Subject = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Grade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -132,6 +135,10 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.Color.RosyBrown;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Student,
+            this.Subject,
+            this.Grade});
             this.dataGridView1.GridColor = System.Drawing.Color.IndianRed;
             this.dataGridView1.Location = new System.Drawing.Point(58, 201);
             this.dataGridView1.Name = "dataGridView1";
@@ -139,6 +146,30 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(697, 182);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // Student
+            // 
+            this.Student.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Student.DataPropertyName = "Student";
+            this.Student.HeaderText = "Student";
+            this.Student.MinimumWidth = 6;
+            this.Student.Name = "Student";
+            // 
+            // Subject
+            // 
+            this.Subject.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Subject.DataPropertyName = "Subject";
+            this.Subject.HeaderText = "Subject";
+            this.Subject.MinimumWidth = 6;
+            this.Subject.Name = "Subject";
+            // 
+            // Grade
+            // 
+            this.Grade.DataPropertyName = "Grade";
+            this.Grade.HeaderText = "Grade";
+            this.Grade.MinimumWidth = 6;
+            this.Grade.Name = "Grade";
+            this.Grade.Width = 125;
             // 
             // AddSubjects
             // 
@@ -167,5 +198,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.ComboBox cmbGrade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Student;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Subject;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Grade;
     }
 }
