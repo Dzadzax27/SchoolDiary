@@ -52,18 +52,30 @@ namespace SchoolDiary.Prijava
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Nastavnici _nastavnik = new Nastavnici
+            if (Validacija.Validacija.ValidirajKontrolu(textBox1, errorProvider1, "Required")
+                && Validacija.Validacija.ValidirajKontrolu(textBox2, errorProvider1, "Required")
+               && Validacija.Validacija.ValidirajKontrolu(textBox3, errorProvider1, "Required")
+                )
             {
-                Ime = textBox1.Text,
-                Prezime = textBox2.Text,
-                StrucnaSprema = textBox3.Text,
-                DatumRodjenja = dateTimePicker1.Value,
-                KorisnickoIme = txtKorisnickoIme.Text,
-                Sifra = txtLozinka.Text
-            };
-            ctb.Nastavnici.Add(_nastavnik);
-            ctb.SaveChanges();
-            Close();
+
+
+                Nastavnici _nastavnik = new Nastavnici
+                {
+                    Ime = textBox1.Text,
+                    Prezime = textBox2.Text,
+                    StrucnaSprema = textBox3.Text,
+                    DatumRodjenja = dateTimePicker1.Value,
+                    KorisnickoIme = txtKorisnickoIme.Text,
+                    Sifra = txtLozinka.Text
+                };
+                ctb.Nastavnici.Add(_nastavnik);
+                ctb.SaveChanges();
+                Close();
+            }
+            else
+            {
+                MessageBox.Show("You have not filled in all fields.");
+            }
         }
         
     }

@@ -34,12 +34,17 @@ namespace SchoolDiary.Diary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Studenti student= new Studenti();
-            student.Ime = textBox1.Text;
-            student.Prezime=textBox2.Text;
-            student.Razred = num;
-            baza.Studenti.Add(student);
-            baza.SaveChanges();
+            if(Validacija.Validacija.ValidirajKontrolu(textBox1,errorProvider1,"required")
+             && Validacija.Validacija.ValidirajKontrolu(textBox2, errorProvider1, "required")
+                )
+            { 
+                Studenti student= new Studenti();
+                student.Ime = textBox1.Text;
+                student.Prezime=textBox2.Text;
+                student.Razred = num;
+                baza.Studenti.Add(student);
+                baza.SaveChanges();
+            }
         }
     }
 }

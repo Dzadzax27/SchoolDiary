@@ -61,6 +61,7 @@ namespace SchoolDiary.Diary
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            //if(Validacija.Validacija.ValidirajKontrolu(cmbGrade))
             SubjectsStudent subStud = new SubjectsStudent();
             subStud.Student = stud;
             subStud.Subjects = cmbSubjects.SelectedItem as Subjects;

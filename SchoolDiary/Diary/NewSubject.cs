@@ -23,11 +23,28 @@ namespace SchoolDiary.Diary
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Subjects sub=new Subjects();
-            sub.Name = textBox1.Text;
-            baza.Subjects.Add(sub);
-            baza.SaveChanges();
-            textBox1.Text = "";
+            if(textBox1.Text!="" && isThereTheSame())
+            { 
+                Subjects sub=new Subjects();
+                sub.Name = textBox1.Text;
+                baza.Subjects.Add(sub);
+                baza.SaveChanges();
+                textBox1.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("There is already item with that name");
+            }
+        }
+
+        private bool isThereTheSame()
+        {
+            foreach (var subj in baza.Subjects)
+            {
+                if (textBox1.Text == subj.Name)
+                    return false;
+            }
+            return true;
         }
     }
 }
